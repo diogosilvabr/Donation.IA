@@ -1,0 +1,68 @@
+{
+    "swagger": "2.0",
+    "info": {
+      "description": "API Documentation",
+      "version": "1.0.0",
+      "title": "API"
+    },
+    "host": "localhost:8888",
+    "basePath": "/api",
+    "paths": {
+      "/test": {
+        "post": {
+          "summary": "Test the model",
+          "description": "Returns predictions for the input text",
+          "parameters": [
+            {
+              "in": "body",
+              "name": "text",
+              "description": "Input text",
+              "required": true,
+              "schema": {
+                "type": "string"
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "successful operation"
+            }
+          }
+        }
+      },
+      "/feedback": {
+        "post": {
+          "summary": "Envia o feedback",
+          "description": "Salva o feedback",
+          "parameters": [
+            {
+              "in": "body",
+              "name": "feedback",
+              "description": "Feedback data",
+              "required": true,
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "text": {
+                    "type": "string"
+                  },
+                  "predicoes": {
+                    "type": "object"
+                  },
+                  "correcoes": {
+                    "type": "object"
+                  }
+                }
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "successful operation"
+            }
+          }
+        }
+      }
+    }
+  }
+  
