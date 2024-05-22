@@ -1,1 +1,0 @@
-# implementação futura
