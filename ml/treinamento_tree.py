@@ -7,7 +7,6 @@ import joblib
 
 # Função de pré-processamento
 def preprocessarTexto(texto):
-    # Implementar sua lógica de pré-processamento aqui
     return texto.lower()
 
 # Carregar os dados
