@@ -21,6 +21,8 @@ O modelo é treinado utilizando o LightGBM, árvore de decisão e dados de feedb
 O objetivo deste projeto é criar uma API que possa ser usada para analisar textos e identificar se contêm linguagem inadequada. 
 O modelo utiliza o LightGBM para treinamento e é continuamente aprimorado com dados de feedback fornecidos pelos usuários.
 
+![Donation.IA](path/to/your/image.png)
+
 ## Instalação
 
 Siga estas etapas para configurar e executar o projeto localmente.
