@@ -35,27 +35,27 @@ Siga estas etapas para configurar e executar o projeto localmente.
    ```
 
 2. Crie um ambiente virtual (opcional, mas recomendado):
-   \`\`\`bash
+   ```bash
    python -m venv venv
    source venv/bin/activate  # No Windows, use \`venv\Scriptsctivate\`
-   \`\`\`
+   ```
 
 3. Instale as dependências:
-   \`\`\`bash
+   ```bash
    pip install -r requirements.txt
-   \`\`\`
+   ```
 
 4. Configure as variáveis de ambiente:
-   - Copie o arquivo \`.env.example\` para \`.env\` e configure as variáveis necessárias.
-   - Exemplo de conteúdo do \`.env\`:
-     \`\`\`
+   - Copie o arquivo `.env.example` para `.env` e configure as variáveis necessárias.
+   - Exemplo de conteúdo do `.env`:
+     ```
      FLASK_ENV=development
-     \`\`\`
+     ```
 
 5. Execute a aplicação:
-   \`\`\`bash
+   ```bash
    flask run
-   \`\`\`
+   ```
 
 ## Uso
 
@@ -63,49 +63,49 @@ Siga estas etapas para configurar e executar o projeto localmente.
 
 #### Analisar Texto
 
-- **URL**: \`/analyze-text\`
-- **Método**: \`POST\`
-- **Parâmetros de Entrada**: JSON com o campo \`text\`
+- **URL**: `/analyze-text`
+- **Método**: `POST`
+- **Parâmetros de Entrada**: JSON com o campo `text`
 - **Exemplo de Entrada**:
-  \`\`\`json
+  ```json
   {
     "text": "Seu texto aqui"
   }
-  \`\`\`
+  ```
 - **Exemplo de Saída**:
-  \`\`\`json
+  ```json
   {
     "inapropriado": true
   }
-  \`\`\`
+  ```
 
 #### Adicionar Feedback
 
-- **URL**: \`/add-feedback\`
-- **Método**: \`POST\`
-- **Parâmetros de Entrada**: JSON com os campos \`text\` e \`inappropriate\`
+- **URL**: `/add-feedback`
+- **Método**: `POST`
+- **Parâmetros de Entrada**: JSON com os campos `text` e `inappropriate`
 - **Exemplo de Entrada**:
-  \`\`\`json
+  ```json
   {
     "text": "Texto de exemplo",
     "inappropriate": 1
   }
-  \`\`\`
+  ```
 - **Exemplo de Saída**:
-  \`\`\`json
+  ```json
   {
     "message": "Feedback added successfully"
   }
-  \`\`\`
+  ```
 
 ## Contribuição
 
 Contribuições são bem-vindas! Se você tiver sugestões, encontrar bugs ou quiser contribuir com o código, por favor, siga estes passos:
 
 1. Fork o repositório
-2. Crie uma branch para sua feature (\`git checkout -b feature/sua-feature\`)
-3. Commit suas mudanças (\`git commit -m 'Adiciona nova feature'\`)
-4. Push para a branch (\`git push origin feature/sua-feature\`)
+2. Crie uma branch para sua feature (`git checkout -b feature/sua-feature`)
+3. Commit suas mudanças (`git commit -m 'Adiciona nova feature'`)
+4. Push para a branch (`git push origin feature/sua-feature`)
 5. Abra um Pull Request
 
 ## Licença
