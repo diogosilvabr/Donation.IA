@@ -29,10 +29,10 @@ Siga estas etapas para configurar e executar o projeto localmente.
 ### Passos
 
 1. Clone o repositório:
-   \`\`\`bash
+   ```bash
    git clone https://github.com/diogosilvabr/Donation.IA.git
    cd Donation.IA
-   \`\`\`
+   ```
 
 2. Crie um ambiente virtual (opcional, mas recomendado):
    \`\`\`bash
