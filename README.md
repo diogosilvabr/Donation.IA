@@ -1,6 +1,10 @@
 
 # Donation.IA
 
+[![Python](https://img.shields.io/badge/Python-3.8%2B-blue.svg)](https://www.python.org/downloads/)
+[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![Contributions Welcome](https://img.shields.io/badge/Contributions-Welcome-brightgreen.svg)](CONTRIBUTING.md)
+
 Este projeto utiliza um modelo de machine learning para analisar textos e identificar linguagem inadequada. 
 O modelo é treinado utilizando o LightGBM, árvore de decisão e dados de feedback para melhorar suas predições ao longo do tempo.
 
@@ -111,6 +115,8 @@ Contribuições são bem-vindas! Se você tiver sugestões, encontrar bugs ou qu
 ## Licença
 
 Este projeto está licenciado sob a [MIT License](LICENSE).
+
+## 
 
 ## Autor
 
