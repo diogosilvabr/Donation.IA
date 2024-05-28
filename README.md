@@ -5,7 +5,7 @@
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![Contributions Welcome](https://img.shields.io/badge/Contributions-Welcome-brightgreen.svg)](CONTRIBUTING.md)
 
-Este projeto utiliza um modelo de machine learning para analisar textos e identificar linguagem inadequada. 
+Este projeto utiliza um modelo de machine learning para analisar textos e identificar linguagem inadequada com objeto de filtrar linguagem inapropriada dentro da plataforma Donation, desenvolvida durante o curdo de Desenvolvimento de Software Multiplataforma da Fatec Registro. 
 O modelo é treinado utilizando o LightGBM, árvore de decisão e dados de feedback para melhorar suas predições ao longo do tempo.
 
 ## Índice
