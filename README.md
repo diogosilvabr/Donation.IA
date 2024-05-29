@@ -41,7 +41,7 @@ Siga estas etapas para configurar e executar o projeto localmente.
 2. Crie um ambiente virtual (opcional, mas recomendado):
    ```bash
    python -m venv venv
-   source venv/bin/activate  # No Windows, use `venv\Scripts\activate`
+   .\venv\Scripts\Activate
    ```
 
 3. Instale as dependências:
