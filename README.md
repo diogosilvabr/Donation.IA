@@ -38,7 +38,7 @@ Siga estas etapas para configurar e executar o projeto localmente.
    cd Donation.IA
    ```
 
-2. Crie um ambiente virtual (opcional, mas recomendado):
+2. Crie um ambiente virtual (opcional, mas recomendado em caso de problemas):
    ```bash
    python -m venv venv
    .\venv\Scripts\Activate
@@ -49,7 +49,7 @@ Siga estas etapas para configurar e executar o projeto localmente.
    pip install -r requirements.txt
    ```
 
-4. Configure as variáveis de ambiente:
+4. Configure as variáveis de ambiente (opcional):
    - Copie o arquivo `.env.example` para `.env` e configure as variáveis necessárias.
    - Exemplo de conteúdo do `.env`:
      ```
@@ -58,7 +58,7 @@ Siga estas etapas para configurar e executar o projeto localmente.
 
 5. Execute a aplicação:
    ```bash
-   flask run
+   flask run ou python run.py
    ```
 
 ## Uso
@@ -115,8 +115,6 @@ Contribuições são bem-vindas! Se você tiver sugestões, encontrar bugs ou qu
 ## Licença
 
 Este projeto está licenciado sob a [MIT License](LICENSE).
-
-## 
 
 ## Autor
 
