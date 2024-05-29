@@ -1,6 +1,6 @@
 import joblib
 
-def carregarModelo(caminhoModelo, caminhoVetorizador):
-    modelo = joblib.load(caminhoModelo)
-    vetorizador = joblib.load(caminhoVetorizador)
+def carregarModelo(caminho_modelo, caminho_vetorizador):
+    modelo = joblib.load(caminho_modelo)
+    vetorizador = joblib.load(caminho_vetorizador)
     return modelo, vetorizador

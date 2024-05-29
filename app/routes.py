@@ -1,7 +1,9 @@
 import csv
+import pandas as pd
 from flask import Blueprint, request, jsonify
 from app.preprocessing import preprocessarTexto
 from ml.modelo import carregarModelo
+from sklearn.metrics import f1_score
 
 api_bp = Blueprint('api', __name__)
 
@@ -38,3 +40,17 @@ def add_feedback():
         writer.writerow([texto, texto_limpo, inappropriate])
 
     return jsonify({'message': 'Feedback added successfully'})
+
+@api_bp.route('/model-performance', methods=['GET'])
+def model_performance():
+    # Carregar dados de teste
+    df_feedback = pd.read_csv('data/feedback.csv')
+    df_feedback['textoLimpo'] = df_feedback['text'].apply(preprocessarTexto)
+    X_test = vetorizador.transform(df_feedback['textoLimpo'])
+    y_test = df_feedback['inappropriate'].astype(int)
+    
+    # Prever e calcular o F1-Score
+    y_pred = modelo.predict(X_test)
+    f1 = f1_score(y_test, y_pred)
+    
+    return jsonify({'F1-Score': f1})
