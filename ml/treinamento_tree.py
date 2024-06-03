@@ -51,7 +51,7 @@ def treinarModelo(dados):
     # Aplica SMOTE para balancear as classes
     X_smote, y_smote = smote.fit_resample(X, y)
     # Configura o modelo LightGBM
-    modelo = lgb.LGBMClassifier(random_state=42)  # Configura o modelo LightGBM
+    modelo = lgb.LGBMClassifier(random_state=42)
     # Define os hiperparâmetros para a busca aleatória
     param_dist = {
         'num_leaves': randint(20, 50),
