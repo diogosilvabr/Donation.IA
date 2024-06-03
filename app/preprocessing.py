@@ -1,6 +1,7 @@
 import re
 import string
 
+# função responsável por normalizar os textos
 def preprocessarTexto(texto):
     # Remove pontuações
     texto = texto.translate(str.maketrans('', '', string.punctuation))
